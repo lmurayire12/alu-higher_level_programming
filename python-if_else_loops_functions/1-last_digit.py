@@ -10,9 +10,9 @@ elif (number % 10) == 0:
     print("0")
 else:
     print("less than 6 and not 0")
-elif number < 0:
+if number < 0:
     number2 = 0 - number
-if (number2 % 10) == 0:
+elif (number2 % 10) == 0:
     print("{} and is 0". format(number2 % 10))
 else:
     print("-{} and is less than 6 and not 0". format(number2 % 10))
