@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
     i = 0
+    new_list = []
     for a in my_list:
         if my_list[i]%2 == 0:
             new_list.append(True)
