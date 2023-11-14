@@ -6,7 +6,7 @@
 class Square:
     """Another square"""
 
-    def __init__(self,size):
+    def __init__(self, size):
         """A new sqaure now"""
 
-    self.__size = size
+        self.__size = size
