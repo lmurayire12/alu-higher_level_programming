@@ -4,11 +4,11 @@
 
 class Square:
     '''
-    Create a square that has a private instance att: size 
+    Create a square
     '''
 
     def __init__(self, size=0, position=(0, 0)):
-        ''' init size variables '''
+        ''' init variables '''
         self.__size = size
         self.__position = position
 
@@ -43,7 +43,7 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-    self.__size = value
+        self.__size = value
 
     @property
     def position(self):
@@ -59,7 +59,7 @@ class Square:
              raise TypeError("position must be a tuple of 2 positive integers")
          if value[0] < 0 or value[1] < 0:
              raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
+         self.__position = value
 
     def area(self):
         """Returns the current square area."""
@@ -69,13 +69,13 @@ class Square:
          """prints in stdout the square with the character #."""
          if self.__size == 0:
              print()
-        else:
-            for i in range(self.__position[1]):
-                print()
-            for n in range(self.__size):
-                for m in range(self.__position[0]):
+         else:
+             for i in range(self.__position[1]):
+                 print()
+             for n in range(self.__size):
+                 for m in range(self.__position[0]):
                      print(' ', end="")
-                for o in range(self.__size):
-                    print("#", end="")
+                 for o in range(self.__size):
+                     print("#", end="")
                  print()
     
