@@ -7,14 +7,16 @@ class Square:
     Create a square that has a private instance att: size 
     '''
 
-    def __init__(self, size=0):
-        ''' init size '''
+    def __init__(self, size=0, position=(0, 0)):
+        ''' init size variables '''
         self.__size = size
+        self.__position = position
 
     @property
     def size(self):
         "returns the size att"
         return self.__size
+
     @size.setter
     def size(self, size):
         '''asign the size to the size att'''
