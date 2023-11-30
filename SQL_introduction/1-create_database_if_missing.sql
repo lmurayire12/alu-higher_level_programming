@@ -1,2 +1,2 @@
---create a database if it is already the script should not fail
+-- create a table in mysql
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
